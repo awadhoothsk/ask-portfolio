@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
 
         {/* Hero Text */}
         <h1 className="section-title text-6xl md:text-7xl lg:text-8xl mb-6 bg-gradient-to-r from-portfolio-accent to-blue-500 bg-clip-text text-transparent">
-          Your Name Here
+          Awadhooth Shrinivas Kulkarni
         </h1>
         
         <p className="section-subtitle text-2xl md:text-3xl mb-8">
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-12">
           <a 
-            href="https://github.com" 
+            href="https://github.com/awadhoothsk" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors duration-300 hover:scale-110 transform"
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
             <Github className="h-6 w-6" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://linkedin.com/in/awadhoothsk" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors duration-300 hover:scale-110 transform"
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="mailto:your.email@example.com"
+            href="mailto:awadhooths16@gmail.com"
             className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors duration-300 hover:scale-110 transform"
           >
             <Mail className="h-6 w-6" />
