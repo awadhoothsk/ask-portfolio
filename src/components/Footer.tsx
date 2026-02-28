@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
               © 2025 Awadhooth Shrinivas Kulkarni. All rights reserved.
             </p>
             <p className="flex items-center text-sm text-portfolio-text-muted mt-2 md:mt-0">
-              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React & TypeScript
+              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> by Awadhooth S K
             </p>
           </div>
         </div>

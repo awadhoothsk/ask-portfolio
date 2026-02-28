@@ -4,43 +4,68 @@ import { Button } from '@/components/ui/button';
 
 const Projects: React.FC = () => {
   const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      date: "2024"
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Firebase", "Material-UI", "WebSocket"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      date: "2023"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that provides detailed weather information, forecasts, and interactive maps using external APIs.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Vue.js", "API Integration", "Chart.js", "CSS Grid"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      date: "2023"
-    },
-    {
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing projects, skills, and experience with modern design and smooth animations.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      date: "2024"
-    }
-  ];
+  {
+    title: "Second Brain – AI-Powered Knowledge Assistant",
+    description:
+      "A full-stack AI memory assistant built using Retrieval-Augmented Generation (RAG). Designed backend APIs, authentication, and semantic search pipeline integrating Mistral LLM with PostgreSQL and Prisma. Deployed with Docker and CI/CD pipelines.",
+    technologies: [
+      "Node.js",
+      "Hono",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Mistral LLM",
+      "Docker",
+      "Azure"
+    ],
+    liveUrl: "https://secodbrain-www-qh4i.vercel.app/",
+    githubUrl: "https://github.com/DeepQuart",
+    date: "2025"
+  },
+  {
+    title: "AI Email Intent Agent",
+    description:
+      "Designed and implemented an AI-driven email automation system that classifies incoming emails using LLM-based intent analysis. Built a decision engine to route emails by priority and trigger automated workflows including Google Sheets logging and Telegram notifications.",
+    technologies: [
+      "n8n",
+      "LLM Integration",
+      "Gmail API",
+      "Workflow Automation",
+      "Decision Engine",
+      "JSON Parsing"
+    ],
+    githubUrl: "#",
+    date: "2026"
+  },
+  {
+    title: "HackerNews Full-Stack Web App",
+    description:
+      "Independently built and deployed a scalable web application to browse and interact with Hacker News stories in real time. Designed both frontend and backend including API integration, pagination, and performance optimization.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    liveUrl: "https://hackernews-www-eta.vercel.app",
+    githubUrl: "https://github.com/awadhoothsk/hackernews-servers",
+    date: "2025"
+  },
+  {
+    title: "SQL-Based Management System",
+    description:
+      "Designed and implemented a database-driven management system using SQL. Built structured workflows for order processing, billing, and inventory tracking with optimized queries for efficient data handling.",
+    technologies: [
+      "SQL",
+      "MySQL",
+      "Database Design",
+      "Query Optimization"
+    ],
+    githubUrl: "#",
+    date: "2024"
+  }
+];
 
   return (
     <div className="min-h-screen animated-bg pt-20">
@@ -99,22 +124,27 @@ const Projects: React.FC = () => {
 
                 {/* Action Buttons */}
                 <div className="flex space-x-4 pt-4">
-                  <Button
-                    className="hero-button flex-1"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white transition-all duration-300"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                </div>
+  {project.liveUrl && (
+    <Button
+      className="hero-button flex-1"
+      onClick={() => window.open(project.liveUrl, '_blank')}
+    >
+      <ExternalLink className="mr-2 h-4 w-4" />
+      Live Demo
+    </Button>
+  )}
+
+  {project.githubUrl && (
+    <Button
+      variant="outline"
+      className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white transition-all duration-300"
+      onClick={() => window.open(project.githubUrl, '_blank')}
+    >
+      <Github className="mr-2 h-4 w-4" />
+      Code
+    </Button>
+  )}
+</div>
               </div>
             </div>
           ))}
@@ -130,7 +160,7 @@ const Projects: React.FC = () => {
           </p>
           <Button
             className="hero-button"
-            onClick={() => window.open('https://github.com/yourusername', '_blank')}
+            onClick={() => window.open('https://github.com/awadhoothsk', '_blank')}
           >
             <Github className="mr-2 h-4 w-4" />
             Visit My GitHub

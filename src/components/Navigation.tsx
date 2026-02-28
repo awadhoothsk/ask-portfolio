@@ -42,7 +42,7 @@ const Navigation: React.FC<NavigationProps> = ({ darkMode, toggleDarkMode }) => 
             to="/" 
             className="text-2xl font-bold text-portfolio-accent hover:text-portfolio-accent-hover transition-colors duration-300"
           >
-            Portfolio
+            Awadhooth S K
           </Link>
 
           {/* Desktop Navigation */}

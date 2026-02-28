@@ -4,11 +4,11 @@ import { GraduationCap, Award, BookOpen, Calendar } from 'lucide-react';
 const Education: React.FC = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "San Francisco, CA",
-      period: "2018 - 2022",
-      gpa: "3.8/4.0",
+      degree: "Bachelor of Engineering in Computer Science",
+      institution: "Siddaganga Institute of Technology",
+      location: "Tumkur, Karnataka",
+      period: "2021 - 2025",
+      gpa: "8.46/10.0",
       description: "Focused on software engineering, web development, and data structures. Completed multiple projects involving full-stack development and machine learning.",
       courses: [
         "Data Structures & Algorithms",
@@ -20,59 +20,76 @@ const Education: React.FC = () => {
       ]
     },
     {
-      degree: "High School Diploma",
-      institution: "Tech Prep High School",
-      location: "San Francisco, CA",
-      period: "2014 - 2018",
-      gpa: "3.9/4.0",
-      description: "Graduated with honors. Participated in computer science competitions and led the programming club.",
-      courses: [
-        "AP Computer Science",
-        "AP Mathematics",
-        "Physics",
-        "Chemistry"
-      ]
-    }
+    degree: "Pre-University Course (PCMB)",
+    institution: "Sri Sathya Sai Loka Seva PU College",
+    location: "Alike, Karnataka, India",
+    period: "2020",
+    gpa: "90.3%",
+    description:
+      "Completed Pre-University education with Physics, Chemistry, Mathematics, and Biology (PCMB), building strong analytical and problem-solving foundations.",
+    courses: [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Biology"
+    ]
+  },
+  {
+    degree: "CBSE (10th Grade)",
+    institution: "Sri Sathya Sai Loka Seva Vidyakendra",
+    location: "Alike, Karnataka, India",
+    period: "2018",
+    gpa: "82.2%",
+    description:
+      "Completed secondary education under CBSE curriculum with a strong academic foundation in science and mathematics.",
+    courses: [
+      "Mathematics",
+      "Science",
+      "English",
+      "Social Science",
+      "Kannada"
+    ]
+  }
   ];
 
   const certifications = [
-    {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "2023",
-      credentialId: "ABC123XYZ"
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "DEF456UVW"
-    },
-    {
-      title: "Google Analytics Certified",
-      issuer: "Google",
-      date: "2022",
-      credentialId: "GHI789RST"
-    }
-  ];
+  {
+    title: "Cyber Security Course",
+    issuer: "Cisco Networking Academy",
+    date: "2024",
+  },
+  {
+    title: "STEP English Program",
+    issuer: "The Hindu Group",
+    date: "2022",
+  },
+  {
+    title: "GDC FieldOps Cadet Training",
+    issuer: "GDC Training Program",
+    date: "2023",
+  }
+];
 
   const achievements = [
-    {
-      title: "Dean's List",
-      description: "Achieved Dean's List recognition for 6 consecutive semesters",
-      year: "2019-2022"
-    },
-    {
-      title: "Hackathon Winner",
-      description: "1st place in University Tech Hackathon for web application development",
-      year: "2021"
-    },
-    {
-      title: "Programming Club President",
-      description: "Led a team of 30+ students and organized coding workshops",
-      year: "2020-2021"
-    }
-  ];
+  {
+    title: "Fullstack AI Developer Internship",
+    description:
+      "Worked on AI-integrated production systems including a RAG-based semantic search platform (Second Brain).",
+    year: "2025"
+  },
+  {
+    title: "HackerNews Full-Stack Application",
+    description:
+      "Independently built and deployed a scalable real-time web application with complete frontend and backend architecture.",
+    year: "2025"
+  },
+  {
+    title: ".NET Full Stack Training",
+    description:
+      "Completed enterprise-focused training on C#, ASP.NET Core, SQL Server, MVC architecture, and RESTful APIs at HCL Technologies.",
+    year: "2025"
+  }
+];
 
   return (
     <div className="min-h-screen animated-bg pt-20">
@@ -143,7 +160,7 @@ const Education: React.FC = () => {
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <h2 className="text-3xl font-bold text-portfolio-text mb-8 flex items-center">
                 <Award className="mr-3 h-8 w-8 text-portfolio-accent" />
-                Academic Achievements
+                Professional Highlights
               </h2>
 
               <div className="space-y-4">
@@ -188,9 +205,7 @@ const Education: React.FC = () => {
                     <div className="text-portfolio-text-muted text-sm mb-2">
                       Issued: {cert.date}
                     </div>
-                    <div className="text-portfolio-text-muted text-xs">
-                      ID: {cert.credentialId}
-                    </div>
+                   
                   </div>
                 ))}
               </div>
@@ -204,12 +219,12 @@ const Education: React.FC = () => {
 
               <div className="portfolio-card space-y-4">
                 {[
-                  { skill: "JavaScript/TypeScript", level: 90 },
-                  { skill: "React", level: 85 },
-                  { skill: "CSS/Tailwind", level: 80 },
-                  { skill: "Node.js", level: 75 },
-                  { skill: "Python", level: 70 }
-                ].map((item, index) => (
+  { skill: "C# / ASP.NET Core", level: 85 },
+  { skill: "Node.js (Express / Hono)", level: 85 },
+  { skill: "React / TypeScript", level: 80 },
+  { skill: "PostgreSQL / SQL Server", level: 80 },
+  { skill: "Docker / Azure", level: 70 }
+].map((item, index) => (
                   <div key={index}>
                     <div className="flex justify-between mb-2">
                       <span className="text-portfolio-text font-medium">

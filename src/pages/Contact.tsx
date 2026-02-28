@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
@@ -34,19 +34,13 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      content: "your.email@example.com",
-      link: "mailto:your.email@example.com"
-    },
-    {
-      icon: <Phone className="h-6 w-6" />,
-      title: "Phone",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      content: "awadhooths16@gmail.com",
+      link: "mailto:awadhooths16@gmail.com"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      content: "Your City, Country",
+      content: "Bengaluru, India",
       link: null
     }
   ];
@@ -55,20 +49,26 @@ const Contact: React.FC = () => {
     {
       icon: <Github className="h-6 w-6" />,
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/awadhoothsk",
       color: "hover:text-gray-400"
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/awadhoothsk",
       color: "hover:text-blue-500"
     },
     {
-      icon: <Twitter className="h-6 w-6" />,
-      name: "Twitter",
-      url: "https://twitter.com/yourusername",
+      icon: <Mail className="h-6 w-6" />,
+      name: "Email",
+      url: "mailto:awadhooths16@gmail.com",
       color: "hover:text-blue-400"
+    },
+    {
+      icon: <Instagram className="h-6 w-6" />,
+      name: "Instagram",
+      url: "https://instagram.com/_awadhooth",
+      color: "hover:text-pink-400"
     }
   ];
 

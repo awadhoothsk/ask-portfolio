@@ -1,38 +1,43 @@
 import React from 'react';
-import { Code, Palette, Rocket, Users } from 'lucide-react';
+import { Code, Server, Brain, Database } from 'lucide-react';
 
 const About: React.FC = () => {
   const skills = [
     {
       icon: <Code className="h-8 w-8 text-portfolio-accent" />,
       title: "Frontend Development",
-      description: "React, TypeScript, CSS, HTML, Modern JavaScript"
+      description:
+        "React.js, Next.js, Angular, TypeScript, Tailwind CSS — building responsive, scalable, and maintainable user interfaces."
     },
     {
-      icon: <Palette className="h-8 w-8 text-portfolio-accent" />,
-      title: "UI/UX Design",
-      description: "Creating beautiful, intuitive user interfaces and experiences"
+      icon: <Server className="h-8 w-8 text-portfolio-accent" />,
+      title: "Backend Engineering",
+      description:
+        "Node.js (Express, Hono), ASP.NET Core, RESTful APIs, Prisma ORM, MVC architecture, and secure authentication systems."
     },
     {
-      icon: <Rocket className="h-8 w-8 text-portfolio-accent" />,
-      title: "Performance Optimization",
-      description: "Building fast, efficient, and scalable web applications"
+      icon: <Database className="h-8 w-8 text-portfolio-accent" />,
+      title: "Databases & DevOps",
+      description:
+        "PostgreSQL, MongoDB, MySQL, SQL Server, Docker, Azure, and CI/CD pipelines using GitHub Actions."
     },
     {
-      icon: <Users className="h-8 w-8 text-portfolio-accent" />,
-      title: "Team Collaboration",
-      description: "Agile methodologies, version control, and effective communication"
+      icon: <Brain className="h-8 w-8 text-portfolio-accent" />,
+      title: "AI & Intelligent Systems",
+      description:
+        "Mistral LLM, Pinecone, Hugging Face embeddings, TensorFlow, and RAG-based semantic search pipelines."
     }
   ];
 
   return (
     <div className="min-h-screen animated-bg pt-20">
       <div className="max-w-6xl mx-auto section-padding">
+
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="section-title">About Me</h1>
           <p className="section-subtitle">
-            Get to know more about my journey, skills, and passion for technology
+            AI Full-Stack Developer | .NET Engineer | Backend & System Design Enthusiast
           </p>
         </div>
 
@@ -40,41 +45,51 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="animate-fade-in">
             <h2 className="text-3xl font-bold text-portfolio-text mb-6">
-              Hello! I'm a passionate developer
+              Building Scalable, Intelligent Systems
             </h2>
-            <div className="space-y-4 text-lg text-portfolio-text-muted leading-relaxed">
+
+            <div className="space-y-5 text-lg text-portfolio-text-muted leading-relaxed">
               <p>
-                I'm a dedicated full-stack developer with a passion for creating innovative 
-                web solutions. My journey in tech started with curiosity and has evolved 
-                into a deep love for building applications that make a difference.
+                I design applications where strong backend architecture meets intelligent automation.
+                My work spans building RESTful APIs with Node.js and ASP.NET Core, managing structured
+                data with PostgreSQL and SQL Server, and developing responsive interfaces using React and TypeScript.
               </p>
+
               <p>
-                I specialize in React, TypeScript, and modern web technologies. I enjoy 
-                the challenge of turning complex problems into simple, beautiful, and 
-                intuitive solutions.
+                I have contributed to AI-enabled platforms implementing semantic search and
+                Retrieval-Augmented Generation (RAG) pipelines. My focus remains on clean
+                architecture, performance optimization, secure authentication, and cloud-ready deployments
+                using Docker and Azure.
               </p>
+
               <p>
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or sharing knowledge with the 
-                developer community.
+                I approach engineering with a systems mindset — prioritizing scalability,
+                maintainability, and long-term technical clarity over short-term feature-driven development.
               </p>
             </div>
           </div>
 
+          {/* Quick Facts */}
           <div className="portfolio-card animate-scale-in">
-            <h3 className="text-2xl font-bold text-portfolio-text mb-6">Quick Facts</h3>
+            <h3 className="text-2xl font-bold text-portfolio-text mb-6">
+              Quick Facts
+            </h3>
             <div className="space-y-4">
               <div className="flex justify-between">
                 <span className="text-portfolio-text-muted">Location:</span>
-                <span className="text-portfolio-text">Your City, Country</span>
+                <span className="text-portfolio-text">Bengaluru, India</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-portfolio-text-muted">Experience:</span>
-                <span className="text-portfolio-text">2+ Years</span>
+                <span className="text-portfolio-text-muted">Current Role:</span>
+                <span className="text-portfolio-text">Graduate Engineer Trainee @ HCLTech</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-portfolio-text-muted">Focus:</span>
-                <span className="text-portfolio-text">Full-Stack Development</span>
+                <span className="text-portfolio-text-muted">Previous Role:</span>
+                <span className="text-portfolio-text">Fullstack AI Developer Intern</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-portfolio-text-muted">Focus Areas:</span>
+                <span className="text-portfolio-text">Full Stack Engineering, AI Integration, System Design</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-portfolio-text-muted">Availability:</span>
@@ -87,8 +102,9 @@ const About: React.FC = () => {
         {/* Skills Grid */}
         <div>
           <h2 className="text-3xl font-bold text-portfolio-text text-center mb-12">
-            What I Bring to the Table
+            Technical Strengths
           </h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <div
@@ -109,6 +125,7 @@ const About: React.FC = () => {
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );
