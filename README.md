@@ -9,3 +9,86 @@
   <img src="https://img.shields.io/badge/Docker-Deployment-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/AI-RAG_Systems-orange?style=for-the-badge" />
 </p>
+---
+
+## 🌐 Live Portfolio
+
+🔗 **Live Site:** (https://awadhoothportfolio.vercel.app/) 
+
+---
+
+## 🎥 Preview
+
+Full-Stack Engineer with enterprise exposure at **HCLTech** and hands-on AI system development experience.
+
+Specialized in:
+
+- Designing scalable REST APIs
+- .NET & Node.js backend architecture
+- SQL & NoSQL database systems
+- Retrieval-Augmented Generation (RAG)
+- Secure authentication & system design
+- Dockerized cloud deployments
+
+I build systems that are structured, maintainable, and production-ready.
+
+---
+
+# 🏗 Architecture Focus
+
+This portfolio reflects engineering principles including:
+
+- Layered architecture
+- Clean separation of concerns
+- RESTful API design
+- Secure authentication workflows
+- Modular frontend components
+- Cloud-ready containerization
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn-ui
+- Vite
+
+## Backend
+- ASP.NET Core (C#)
+- Node.js (Express / Hono)
+- REST APIs
+- Prisma ORM
+
+## Databases
+- PostgreSQL
+- SQL Server
+- MySQL
+- MongoDB
+
+## AI Systems
+- Mistral LLM
+- Pinecone
+- Hugging Face Embeddings
+- TensorFlow
+- RAG Pipelines
+
+## DevOps
+- Docker
+- Azure
+- GitHub Actions
+- CI/CD Pipelines
+
+---
+
+# ⚙️ Run Locally
+
+```bash
+git clone https://github.com/yourusername/portfolio-repo.git
+cd portfolio-repo
+npm install
+npm run dev
+
+
