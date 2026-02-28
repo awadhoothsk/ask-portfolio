@@ -19,6 +19,10 @@
 
 ## 🎥 Preview
 
+<p align="center">
+  <img src="./preview.gif" width="800" alt="Portfolio Preview"/>
+</p>
+
 Full-Stack Engineer with enterprise exposure at **HCLTech** and hands-on AI system development experience.
 
 Specialized in:
@@ -86,8 +90,8 @@ This portfolio reflects engineering principles including:
 # ⚙️ Run Locally
 
 ```bash
-git clone https://github.com/yourusername/portfolio-repo.git
-cd portfolio-repo
+git clone [https://github.com/awadhoothsk/ask-portfolio.git]
+cd ask-portfolio
 npm install
 npm run dev
 
